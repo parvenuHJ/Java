@@ -1,0 +1,52 @@
+import java.util.Scanner;
+
+public class Q현재몸무게와목표몸무게 {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("현재몸무게 : ");
+		int now = sc.nextInt();
+		System.out.print("목표몸무게 : ");
+		int goal = sc.nextInt();
+		int week = 0;
+		
+		
+		while (now <= goal) {
+			if (now > goal) {
+				week++;
+				System.out.print(week + "주차 감량 몸무게 : "+ (now-goal));
+				
+			}else {
+				System.out.println(now + "kg 달성!! 축하합니다!");
+				break;
+			}
+			
+			
+			
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

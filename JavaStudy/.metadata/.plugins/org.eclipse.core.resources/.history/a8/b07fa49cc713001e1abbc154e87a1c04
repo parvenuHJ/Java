@@ -1,0 +1,10 @@
+package while문;
+
+public class Ex08실습8_계산기프로그램 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

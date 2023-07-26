@@ -1,0 +1,54 @@
+package game;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Dal {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+		
+		ArrayList<String> list = new ArrayList<String>();
+		
+		list.add("w");
+		list.add("w");
+		list.add("w");
+		list.add("w");
+		list.add("d");
+		list.add("d");
+		list.add("d");
+		list.add("s");
+		list.add("s");
+		list.add("s");
+		list.add("a");
+		list.add("a");
+		list.add("a");
+		
+		int i = 0;
+		
+			
+			System.out.println("w,a,s,d 방향키를 움직여서 한바퀴 완주하세요 (위쪽 방향으로 시작");
+			String input = sc.next();
+			System.out.println(list.get(i));
+			if(input.equals(list.get(i))) {
+				i++;
+				System.out.println(" ++++ ");
+				System.out.println(" +  + ");
+				System.out.println(" +  + ");
+				System.out.println("↑++++ ");
+			}
+				
+		
+			
+			
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

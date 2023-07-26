@@ -1,0 +1,22 @@
+package controller;
+
+import model.MbDAO;
+import model.MbDTO;
+
+public class UserController {
+
+	
+	// 참가자 등록
+	
+	public void user(MbDTO dto) {
+		MbDAO dao = new MbDAO();
+		int cnt = dao.insert(dto);
+		if (cnt > 0) {
+			System.out.println("참가자 등록이 완료되었습니다.");
+		} else {
+			System.out.println("참가자 등록에 실패했습니다. 다시 시도하세요.");
+		}
+		
+	}
+	
+}

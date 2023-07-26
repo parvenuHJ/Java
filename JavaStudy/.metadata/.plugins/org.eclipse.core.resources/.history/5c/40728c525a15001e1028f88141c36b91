@@ -1,0 +1,47 @@
+package ex0628;
+
+public class Ex04실습2 {
+
+	public static void main(String[] args) {
+
+		
+		int [] intArray = {1,2,3,4,5,6,7,8,9};
+		
+		for(int i = 0 ; i < intArray.length ; i++) {
+			
+			System.out.print("intArray에 들어있는 홀수는 ");
+			
+			while(intArray[i] < 10) {
+				
+				if(intArray[i]%2==1) {
+					System.out.print(intArray[i]);
+			}
+				System.out.print(" 입니다.");
+			
+			}
+			
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

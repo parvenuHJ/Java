@@ -1,0 +1,62 @@
+package game;
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class ddak {
+
+		private int fail;
+	
+	
+	
+	
+	
+	
+		// 1. 딱지 치기
+	
+		public int getFail() {
+			return fail;
+		}
+
+
+
+
+
+
+		public void setFail(int fail) {
+			this.fail = fail;
+		}
+
+
+
+
+
+
+		public void ddak() {
+		Scanner sc = new Scanner(System.in);
+		Random rd = new Random();
+		
+		
+		fail = 0; // 실패했을때 +1 씩 해줄 변수
+		
+		while (fail < 6) {
+			System.out.println("집중을 해서 딱지를 치세요 >> g + enter");
+			String ddak = sc.next();
+			System.out.println("MIN]=====================[MAX");
+			
+			int num = rd.nextInt(10) + 1; 
+			System.out.println(" 당신의 파워 : " + num);
+			
+			if (num > 11) {
+				System.out.println("SUCCESS");
+				break;
+			} else {
+				fail++;
+				System.out.println("Fail...");
+			}
+			
+		}
+		
+	}
+
+}
